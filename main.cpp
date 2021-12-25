@@ -4,7 +4,7 @@ using namespace std;
 
 struct Gold
 {
-    double m, v;
+    int m, v;
     double p;
 }g[110];
 
@@ -20,7 +20,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         cin >> g[i].m >> g[i].v;
-        g[i].p = g[i].v / g[i].m;
+        g[i].p = (double)g[i].v / (double)g[i].m;
     }
     sort(g + 1, g + n + 1, cmp);
     
